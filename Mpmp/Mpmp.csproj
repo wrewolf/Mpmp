@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{658676B5-D645-445C-B7FD-FED56934971E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mpmp</RootNamespace>
+    <AssemblyName>Mpmp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\BanAPI.cs" />
+    <Compile Include="API\BlockAPI.cs" />
+    <Compile Include="API\ChatAPI.cs" />
+    <Compile Include="API\ConsoleAPI.cs" />
+    <Compile Include="API\EntityAPI.cs" />
+    <Compile Include="API\LevelAPI.cs" />
+    <Compile Include="API\MobAPI.cs" />
+    <Compile Include="API\PlayerAPI.cs" />
+    <Compile Include="API\PluginAPI.cs" />
+    <Compile Include="API\ServerAPI.cs" />
+    <Compile Include="API\TileAPI.cs" />
+    <Compile Include="API\TimeAPI.cs" />
+    <Compile Include="constants\BlockIDs.cs" />
+    <Compile Include="constants\GeneralConstants.cs" />
+    <Compile Include="constants\ItemIDs.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="inventory\Window.cs" />
+    <Compile Include="material\Block.cs" />
+    <Compile Include="material\block\attachable\Ladder.cs" />
+    <Compile Include="material\block\attachable\SignPost.cs" />
+    <Compile Include="material\block\attachable\Torch.cs" />
+    <Compile Include="material\block\attachable\Trapdoor.cs" />
+    <Compile Include="material\block\attachable\WallSign.cs" />
+    <Compile Include="material\block\DoorBlock.cs" />
+    <Compile Include="material\block\FallableBlock.cs" />
+    <Compile Include="material\block\FlowableBlock.cs" />
+    <Compile Include="material\block\GenericBlock.cs" />
+    <Compile Include="material\block\LiquidBlock.cs" />
+    <Compile Include="material\block\liquid\Lava.cs" />
+    <Compile Include="material\block\liquid\StillLava.cs" />
+    <Compile Include="material\block\liquid\StillWater.cs" />
+    <Compile Include="material\block\liquid\Water.cs" />
+    <Compile Include="material\block\misc\Air.cs" />
+    <Compile Include="material\block\misc\Bed.cs" />
+    <Compile Include="material\block\misc\Fire.cs" />
+    <Compile Include="material\block\misc\NetherReactor.cs" />
+    <Compile Include="material\block\misc\TNT.cs" />
+    <Compile Include="material\block\nonfull\Cake.cs" />
+    <Compile Include="material\block\nonfull\Cobweb.cs" />
+    <Compile Include="material\block\nonfull\Fence.cs" />
+    <Compile Include="material\block\nonfull\FenceGate.cs" />
+    <Compile Include="material\block\nonfull\GlassPane.cs" />
+    <Compile Include="material\block\nonfull\IronDoor.cs" />
+    <Compile Include="material\block\nonfull\Slab.cs" />
+    <Compile Include="material\block\nonfull\SnowLayer.cs" />
+    <Compile Include="material\block\nonfull\stairs\BrickStairs.cs" />
+    <Compile Include="material\block\nonfull\stairs\CobblestoneStairs.cs" />
+    <Compile Include="material\block\nonfull\stairs\NetherBricksStairs.cs" />
+    <Compile Include="material\block\nonfull\stairs\QuartzStairs.cs" />
+    <Compile Include="material\block\nonfull\stairs\SandstoneStairs.cs" />
+    <Compile Include="material\block\nonfull\stairs\StoneBrickStairs.cs" />
+    <Compile Include="material\block\nonfull\stairs\WoodStairs.cs" />
+    <Compile Include="material\block\nonfull\WoodDoor.cs" />
+    <Compile Include="material\block\ore\CoalOre.cs" />
+    <Compile Include="material\block\ore\DiamondOre.cs" />
+    <Compile Include="material\block\ore\GlowingRedstoneOre.cs" />
+    <Compile Include="material\block\ore\GoldOre.cs" />
+    <Compile Include="material\block\ore\IronOre.cs" />
+    <Compile Include="material\block\ore\LapisOre.cs" />
+    <Compile Include="material\block\ore\RedstoneOre.cs" />
+    <Compile Include="material\block\plant\BrownMushroom.cs" />
+    <Compile Include="material\block\plant\Cactus.cs" />
+    <Compile Include="material\block\plant\CyanFlower.cs" />
+    <Compile Include="material\block\plant\Dandelion.cs" />
+    <Compile Include="material\block\plant\DeadBush.cs" />
+    <Compile Include="material\block\plant\MelonStem.cs" />
+    <Compile Include="material\block\plant\RedMushroom.cs" />
+    <Compile Include="material\block\plant\Sapling.cs" />
+    <Compile Include="material\block\plant\Sugarcane.cs" />
+    <Compile Include="material\block\plant\TallGrass.cs" />
+    <Compile Include="material\block\plant\Wheat.cs" />
+    <Compile Include="material\block\SolidBlock.cs" />
+    <Compile Include="material\block\solid\Lapis.cs" />
+    <Compile Include="material\block\solid\Bedrock.cs" />
+    <Compile Include="material\block\solid\Bookshelf.cs" />
+    <Compile Include="material\block\solid\Bricks.cs" />
+    <Compile Include="material\block\solid\BurningFurnace.cs" />
+    <Compile Include="material\block\solid\Chest.cs" />
+    <Compile Include="material\block\solid\Clay.cs" />
+    <Compile Include="material\block\solid\Cobblestone.cs" />
+    <Compile Include="material\block\solid\Diamond.cs" />
+    <Compile Include="material\block\solid\Dirt.cs" />
+    <Compile Include="material\block\solid\DoubleSlab.cs" />
+    <Compile Include="material\block\solid\Farmland.cs" />
+    <Compile Include="material\block\solid\Furnace.cs" />
+    <Compile Include="material\block\solid\Glass.cs" />
+    <Compile Include="material\block\solid\GlowingObsidian.cs" />
+    <Compile Include="material\block\solid\Glowstone.cs" />
+    <Compile Include="material\block\solid\Gold.cs" />
+    <Compile Include="material\block\solid\Grass.cs" />
+    <Compile Include="material\block\solid\Gravel.cs" />
+    <Compile Include="material\block\solid\Ice.cs" />
+    <Compile Include="material\block\solid\Iron.cs" />
+    <Compile Include="material\block\solid\Leaves.cs" />
+    <Compile Include="material\block\solid\Melon.cs" />
+    <Compile Include="material\block\solid\MossStone.cs" />
+    <Compile Include="material\block\solid\NetherBrick.cs" />
+    <Compile Include="material\block\solid\Netherrack.cs" />
+    <Compile Include="material\block\solid\Obsidian.cs" />
+    <Compile Include="material\block\solid\Planks.cs" />
+    <Compile Include="material\block\solid\Quartz.cs" />
+    <Compile Include="material\block\solid\Sand.cs" />
+    <Compile Include="material\block\solid\Sandstone.cs" />
+    <Compile Include="material\block\solid\Snow.cs" />
+    <Compile Include="material\block\solid\SoulSand.cs" />
+    <Compile Include="material\block\solid\Stone.cs" />
+    <Compile Include="material\block\solid\StoneBricks.cs" />
+    <Compile Include="material\block\solid\Stonecutter.cs" />
+    <Compile Include="material\block\solid\Wood.cs" />
+    <Compile Include="material\block\solid\Wool.cs" />
+    <Compile Include="material\block\solid\Workbench.cs" />
+    <Compile Include="material\block\StairBlock.cs" />
+    <Compile Include="material\block\TransparentBlock.cs" />
+    <Compile Include="material\Item.cs" />
+    <Compile Include="material\item\generic\Apple.cs" />
+    <Compile Include="material\item\generic\Bowl.cs" />
+    <Compile Include="material\item\generic\Brick.cs" />
+    <Compile Include="material\item\generic\Bucket.cs" />
+    <Compile Include="material\item\generic\Cake.cs" />
+    <Compile Include="material\item\generic\Coal.cs" />
+    <Compile Include="material\item\generic\Diamond.cs" />
+    <Compile Include="material\item\generic\Feather.cs" />
+    <Compile Include="material\item\generic\GoldIngot.cs" />
+    <Compile Include="material\item\generic\IronDoor.cs" />
+    <Compile Include="material\item\generic\IronIngot.cs" />
+    <Compile Include="material\item\generic\MelonSeeds.cs" />
+    <Compile Include="material\item\generic\Painting.cs" />
+    <Compile Include="material\item\generic\SignItem.cs" />
+    <Compile Include="material\item\generic\SpawnEgg.cs" />
+    <Compile Include="material\item\generic\Stick.cs" />
+    <Compile Include="material\item\generic\Sugarcane.cs" />
+    <Compile Include="material\item\generic\WheatSeeds.cs" />
+    <Compile Include="material\item\generic\WoodenDoor.cs" />
+    <Compile Include="material\item\tool\FlintSteel.cs" />
+    <Compile Include="material\item\tool\IronAxe.cs" />
+    <Compile Include="material\item\tool\IronHoe.cs" />
+    <Compile Include="material\item\tool\IronPickaxe.cs" />
+    <Compile Include="material\item\tool\IronShovel.cs" />
+    <Compile Include="material\item\tool\WoodenAxe.cs" />
+    <Compile Include="material\item\tool\WoodenPickaxe.cs" />
+    <Compile Include="material\item\tool\WoodenShovel.cs" />
+    <Compile Include="material\item\tool\WoodenSword.cs" />
+    <Compile Include="math\Matrix.cs" />
+    <Compile Include="math\Vector2.cs" />
+    <Compile Include="math\Vector3.cs" />
+    <Compile Include="math\VectorMath.cs" />
+    <Compile Include="network\CustomPacketHandler.cs" />
+    <Compile Include="network\MinecraftInterface.cs" />
+    <Compile Include="network\Packet.cs" />
+    <Compile Include="network\ProtocolInfo.cs" />
+    <Compile Include="network\Query.cs" />
+    <Compile Include="network\RCON.cs" />
+    <Compile Include="network\UDPSocket.cs" />
+    <Compile Include="Packages.cs" />
+    <Compile Include="Paket.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="pmf\Level.cs" />
+    <Compile Include="pmf\Plugin.cs" />
+    <Compile Include="pmf\PMF.cs" />
+    <Compile Include="PocketMinecraftServer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recipes\CraftingRecipes.cs" />
+    <Compile Include="recipes\FuelData.cs" />
+    <Compile Include="recipes\SmeltingData.cs" />
+    <Compile Include="utils\Config.cs" />
+    <Compile Include="utils\Container.cs" />
+    <Compile Include="utils\Java.cs" />
+    <Compile Include="utils\MersenneTwister.cs" />
+    <Compile Include="utils\NBT.cs" />
+    <Compile Include="utils\pthreads.cs" />
+    <Compile Include="utils\Random.cs" />
+    <Compile Include="utils\Spyc.cs" />
+    <Compile Include="utils\UPnP.cs" />
+    <Compile Include="utils\Utils.cs" />
+    <Compile Include="utils\VersionString.cs" />
+    <Compile Include="world\Entity.cs" />
+    <Compile Include="world\Explosion.cs" />
+    <Compile Include="world\generator\LevelGenerator.cs" />
+    <Compile Include="world\generator\noise\NoiseGenerator.cs" />
+    <Compile Include="world\generator\noise\NoiseGeneratorOctaves.cs" />
+    <Compile Include="world\generator\noise\NoiseGeneratorPerlin.cs" />
+    <Compile Include="world\generator\objects\grass\TallGrassObject.cs" />
+    <Compile Include="world\generator\objects\OreObject.cs" />
+    <Compile Include="world\generator\objects\OreType.cs" />
+    <Compile Include="world\generator\objects\PondObject.cs" />
+    <Compile Include="world\generator\objects\tree\BigTreeObject.cs" />
+    <Compile Include="world\generator\objects\tree\PineTreeObject.cs" />
+    <Compile Include="world\generator\objects\tree\SmallTreeObject.cs" />
+    <Compile Include="world\generator\objects\tree\SpruceTreeObject.cs" />
+    <Compile Include="world\generator\objects\tree\TreeObject.cs" />
+    <Compile Include="world\generator\Populator.cs" />
+    <Compile Include="world\generator\populator\MineshaftPopulator.cs" />
+    <Compile Include="world\generator\populator\OrePopulator.cs" />
+    <Compile Include="world\generator\populator\PondPopulator.cs" />
+    <Compile Include="world\generator\SuperflatGenerator.cs" />
+    <Compile Include="world\generator\TemporalGenerator.cs" />
+    <Compile Include="world\generator\WorldGenerator.cs" />
+    <Compile Include="world\Level.cs" />
+    <Compile Include="world\LevelImport.cs" />
+    <Compile Include="world\PocketChunkParser.cs" />
+    <Compile Include="world\Position.cs" />
+    <Compile Include="world\Tile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Compile Include="material\item\generic\Bed.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

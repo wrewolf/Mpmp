@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Mpmp.API
+{
+    class ServerAPI
+    {
+        internal static PocketMinecraftServer request()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

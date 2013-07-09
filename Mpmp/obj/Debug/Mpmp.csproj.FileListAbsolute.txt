@@ -1,0 +1,6 @@
+C:\root\Mpmp\Mpmp\bin\Debug\Mpmp.exe.config
+C:\root\Mpmp\Mpmp\bin\Debug\Mpmp.exe
+C:\root\Mpmp\Mpmp\bin\Debug\Mpmp.pdb
+C:\root\Mpmp\Mpmp\obj\Debug\Mpmp.exe
+C:\root\Mpmp\Mpmp\obj\Debug\Mpmp.pdb
+C:\root\Mpmp\Mpmp\obj\Debug\Mpmp.csprojResolveAssemblyReference.cache
