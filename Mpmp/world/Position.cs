@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mpmp.material;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,11 @@ namespace Mpmp.world
 
         public int z;
 
-        internal int getSide(int side)
+        internal Block getSide(Block side)
+        {
+            throw new NotImplementedException();
+        }
+        internal Block getSide(int side)
         {
             throw new NotImplementedException();
         }

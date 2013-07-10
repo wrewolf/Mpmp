@@ -8,5 +8,6 @@ namespace Mpmp.material.block.misc
 {
     class AirBlock : TransparentBlock
     {
+        public AirBlock() { }
     }
 }

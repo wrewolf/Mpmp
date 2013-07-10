@@ -26,6 +26,7 @@ namespace Mpmp.constants
         public   const int LAVA = 10;
         public   const int STILL_LAVA = 11;
         public   const int SAND = 12;
+        public const int GRAVEL = 13;
         public   const int GOLD_ORE = 14;
         public   const int IRON_ORE = 15;
         public   const int COAL_ORE = 16;

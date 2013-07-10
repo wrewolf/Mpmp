@@ -65,6 +65,7 @@
     <Compile Include="material\block\attachable\Trapdoor.cs" />
     <Compile Include="material\block\attachable\WallSign.cs" />
     <Compile Include="material\block\DoorBlock.cs" />
+    <Compile Include="material\block\Drops.cs" />
     <Compile Include="material\block\FallableBlock.cs" />
     <Compile Include="material\block\FlowableBlock.cs" />
     <Compile Include="material\block\GenericBlock.cs" />
