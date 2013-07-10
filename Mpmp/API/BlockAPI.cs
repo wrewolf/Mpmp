@@ -23,5 +23,10 @@ namespace Mpmp.API
         {
             throw new NotImplementedException();
         }
+
+        internal static object getItem(int p1, int p2, int p3)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

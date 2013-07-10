@@ -14,7 +14,7 @@ namespace Mpmp.material
         //public static List<KeyValuePair<int,string>> @class=new List<KeyValuePair<int,string>> {new KeyValuePair<int,string>(0,"AirBlock")};
         //public static Dictionary<int, string> @class = new Dictionary<int, string>();
         protected int id;
-        protected int meta;
+        public int meta;
         protected string name;
         protected float breakTime;
         public bool isActivable = false;

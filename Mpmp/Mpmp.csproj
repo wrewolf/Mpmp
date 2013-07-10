@@ -59,13 +59,15 @@
     <Compile Include="Data.cs" />
     <Compile Include="inventory\Window.cs" />
     <Compile Include="material\Block.cs" />
+    <Compile Include="utils\Names.cs" />
+    <Compile Include="utils\Faces.cs" />
     <Compile Include="material\block\attachable\Ladder.cs" />
     <Compile Include="material\block\attachable\SignPost.cs" />
     <Compile Include="material\block\attachable\Torch.cs" />
     <Compile Include="material\block\attachable\Trapdoor.cs" />
     <Compile Include="material\block\attachable\WallSign.cs" />
     <Compile Include="material\block\DoorBlock.cs" />
-    <Compile Include="material\block\Drops.cs" />
+    <Compile Include="utils\Drops.cs" />
     <Compile Include="material\block\FallableBlock.cs" />
     <Compile Include="material\block\FlowableBlock.cs" />
     <Compile Include="material\block\GenericBlock.cs" />

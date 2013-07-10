@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mpmp.constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace Mpmp.material.block.nonfull.stairs
 {
     class CobblestoneStairsBlock : StairBlock
     {
+        public CobblestoneStairsBlock() : this(0) { }
+        public CobblestoneStairsBlock(int meta) : base(BlockIDs.COBBLESTONE_STAIRS, meta, "Cobblestone Stairs") { }
     }
 }

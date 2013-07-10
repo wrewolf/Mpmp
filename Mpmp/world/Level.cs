@@ -18,5 +18,35 @@ namespace Mpmp.world
         {
             throw new NotImplementedException();
         }
+
+        internal void setBlock(material.block.attachable.SignPostBlock signPostBlock, material.block.misc.AirBlock airBlock, bool p1, bool p2)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void setBlock(material.block.attachable.SignPostBlock signPostBlock, material.block.misc.AirBlock airBlock, bool p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void setBlock(Block block1, Block block2)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void setBlock(material.block.attachable.TorchBlock torchBlock, material.block.misc.AirBlock airBlock, bool p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void setBlock(material.block.misc.FireBlock fireBlock, material.block.misc.AirBlock airBlock, bool p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void setBlock(material.block.nonfull.SnowLayerBlock snowLayerBlock, material.block.misc.AirBlock airBlock, bool p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
