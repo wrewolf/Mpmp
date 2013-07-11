@@ -12,11 +12,7 @@ namespace Mpmp.material.block
 {
     class GenericBlock : Block
     {
-        public GenericBlock(int id) : this(id, 0) { }
-
-        public GenericBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public GenericBlock(int id, int meta, string name) : base(id, meta, name) { }
+        public GenericBlock(int id, int meta=0, string name = "Unknown") : base(id, meta, name) { }
 
         public Block place(Item item, Player player, Block block, Block target, int face, int fx, int fy, int fz)
         {

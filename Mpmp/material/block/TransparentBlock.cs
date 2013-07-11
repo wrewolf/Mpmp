@@ -8,11 +8,7 @@ namespace Mpmp.material.block
 {
     class TransparentBlock : GenericBlock
     {
-        public TransparentBlock(int id) : this(id, 0) { }
-
-        public TransparentBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public TransparentBlock(int id, int meta, string name)
+        public TransparentBlock(int id, int meta=0, string name = "Unknown")
             : base(id, meta, name)
         {
             this.isActivable = false;

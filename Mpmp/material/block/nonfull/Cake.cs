@@ -10,8 +10,7 @@ namespace Mpmp.material.block.nonfull
 {
     class CakeBlock : TransparentBlock
     {
-        public CakeBlock() : this(0) { }
-        public CakeBlock(int meta)
+        public CakeBlock(int meta=0)
             : base(BlockIDs.CAKE_BLOCK, 0, "Cake Block")
         {
             this.isFullBlock = false;

@@ -9,8 +9,7 @@ namespace Mpmp.material.block.attachable
 {
     class WallSignBlock : SignPostBlock
     {
-        public WallSignBlock() : this(0) { }
-        public WallSignBlock(int meta)
+        public WallSignBlock(int meta=0)
             : base(BlockIDs.WALL_SIGN, meta, "Wall Sign")
         {
         }

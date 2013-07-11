@@ -10,8 +10,7 @@ namespace Mpmp.material.block.nonfull
 {
     class SlabBlock : TransparentBlock
     {
-        public SlabBlock() : this(0) { }
-        public SlabBlock(int meta)
+        public SlabBlock(int meta=0)
             : base(BlockIDs.SLAB, meta, "Slab")
         {
             var names = new Names();

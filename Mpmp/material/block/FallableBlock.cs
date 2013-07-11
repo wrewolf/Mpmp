@@ -10,11 +10,7 @@ namespace Mpmp.material.block
 {
     class FallableBlock : SolidBlock
     {
-        public FallableBlock(int id) : this(id, 0) { }
-
-        public FallableBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public FallableBlock(int id, int meta, string name)
+        public FallableBlock(int id, int meta=0, string name = "Unknown")
             : base(id, meta, name)
         {
             this.hasPhysics = true;

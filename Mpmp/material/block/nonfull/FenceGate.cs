@@ -10,8 +10,7 @@ namespace Mpmp.material.block.nonfull
 {
     class FenceGateBlock : TransparentBlock
     {
-        public FenceGateBlock() : this(0) { }
-        public FenceGateBlock(int meta)
+        public FenceGateBlock(int meta=0)
             : base(BlockIDs.FENCE_GATE, meta, "Fence Gate")
         {
             this.isActivable = true;
@@ -31,7 +30,7 @@ namespace Mpmp.material.block.nonfull
 			faces[1]= 0;
 			faces[2]= 1;
 			faces[3]= 2;
-		);
+
 		 this.meta =  faces[ player.entity.getDirection()] & 0x03;
 		 this.level.setBlock( block,  this);
 		return true;

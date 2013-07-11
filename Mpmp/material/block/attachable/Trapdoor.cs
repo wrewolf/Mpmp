@@ -9,9 +9,7 @@ namespace Mpmp.material.block.attachable
 {
     class TrapdoorBlock : TransparentBlock
     {
-        public TrapdoorBlock() : this(0) { }
-
-        public TrapdoorBlock(int meta) :
+        public TrapdoorBlock(int meta=0) :
             base(BlockIDs.TRAPDOOR, meta, "Trapdoor")
         {
             this.isActivable = true;

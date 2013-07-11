@@ -9,7 +9,6 @@ namespace Mpmp.material.block.liquid
 {
     class StillLavaBlock : LiquidBlock
     {
-                public StillLavaBlock() : this(0) { }
-                public StillLavaBlock(int meta) : base(BlockIDs.STILL_LAVA, meta, "Still Lava") { }
+                public StillLavaBlock(int meta=0) : base(BlockIDs.STILL_LAVA, meta, "Still Lava") { }
     }
 }

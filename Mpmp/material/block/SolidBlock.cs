@@ -8,11 +8,7 @@ namespace Mpmp.material.block
 {
     class SolidBlock : GenericBlock
     {
-        public SolidBlock(int id) : this(id, 0) { }
-
-        public SolidBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public SolidBlock(int id, int meta, string name)
+        public SolidBlock(int id, int meta=0, string name = "Unknown")
             : base(id, meta, name)
         {
             this.isSolid = true;

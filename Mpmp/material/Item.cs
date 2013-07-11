@@ -25,16 +25,7 @@ namespace Mpmp.material
         public static SortedList @class = new SortedList();
         public static int Inited = 0;
 
-        public Item(int id)
-            : this(id, 0) { }
-
-        public Item(int id, int meta)
-            : this(id, meta, 1) { }
-
-        public Item(int id, int meta, int count)
-            : this(id, meta, count, "Unknown") { }
-
-        public Item(int id, int meta, int count, string name)
+        public Item(int id, int meta = 0, int count = 1, string name = "Unknown")
         {
             this.id = id;
             this.meta = meta;

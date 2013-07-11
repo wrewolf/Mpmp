@@ -9,7 +9,6 @@ namespace Mpmp.material.block.nonfull.stairs
 {
     class WoodStairsBlock : StairBlock
     {
-                public WoodStairsBlock() : this(0) { }
-                public WoodStairsBlock(int meta) : base(BlockIDs.WOOD_STAIRS, meta, "Wood Stairs") { }
+                public WoodStairsBlock(int meta=0) : base(BlockIDs.WOOD_STAIRS, meta, "Wood Stairs") { }
     }
 }

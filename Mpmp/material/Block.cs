@@ -34,13 +34,8 @@ namespace Mpmp.material
 
         public static SortedList @class = new SortedList();
         public static int Inited = 0;
-        public Block(int id)
-            : this(id, 0) { }
 
-        public Block(int id, int meta)
-            : this(id, meta, "Unknown") { }
-
-        public Block(int id, int meta, string name)
+        public Block(int id, int meta = 0, string name = "Unknown")
         {
             this.id = (int)id;
             this.meta = (int)meta;
@@ -205,10 +200,10 @@ namespace Mpmp.material
             return "Block " + this.name + " (" + this.id.ToString() + ":" + this.meta.ToString() + ")";
         }
 
-        abstract bool isBreakable(Item item, Player player);
-        abstract bool onBreak(Item item, Player player);
-        abstract bool onActivate(Item item, Player player);
-        abstract bool onUpdate(Block item);
-        abstract bool onActivate(Item item, Player player, Block block, Block target, double face, double fx, double fy, double fz);
+        //public bool isBreakable(Item item, Player player);
+        //public bool onBreak(Item item, Player player);
+        //public bool onActivate(Item item, Player player);
+        //public bool onUpdate(Block item);
+        //public bool onActivate(Item item, Player player, Block block, Block target, double face, double fx, double fy, double fz);
     }
 }

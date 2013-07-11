@@ -8,11 +8,7 @@ namespace Mpmp.material.block
 {
     class FlowableBlock : TransparentBlock
     {
-        public FlowableBlock(int id) : this(id, 0) { }
-
-        public FlowableBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public FlowableBlock(int id, int meta, string name)
+        public FlowableBlock(int id, int meta=0, string name = "Unknown")
             : base(id, meta, name)
         {
             this.isFlowable = true;

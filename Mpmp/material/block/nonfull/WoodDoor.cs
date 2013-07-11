@@ -9,8 +9,7 @@ namespace Mpmp.material.block.nonfull
 {
     class WoodDoorBlock : DoorBlock
     {
-        public WoodDoorBlock() : this(0) { }
-        public WoodDoorBlock(int meta)
+        public WoodDoorBlock(int meta=0)
             : base(BlockIDs.WOOD_DOOR_BLOCK, meta, "Wood Door Block")
         {
             this.isActivable = false;

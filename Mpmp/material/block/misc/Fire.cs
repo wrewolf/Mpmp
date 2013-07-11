@@ -9,8 +9,7 @@ namespace Mpmp.material.block.misc
 {
     class FireBlock : FlowableBlock
     {
-        public FireBlock() : this(0) { }
-        public FireBlock(int meta)
+        public FireBlock(int meta=0)
             : base(BlockIDs.FIRE, meta, "Fire")
         {
             this.isReplaceable = true;

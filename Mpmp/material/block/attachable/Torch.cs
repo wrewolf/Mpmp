@@ -11,8 +11,7 @@ namespace Mpmp.material.block.attachable
 {
     class TorchBlock : FlowableBlock
     {
-        public TorchBlock() : this(0) { }
-        public TorchBlock(int meta)
+        public TorchBlock(int meta=0)
             : base(BlockIDs.TORCH, meta, "Torch") { }
 
         public bool onUpdate(int type)

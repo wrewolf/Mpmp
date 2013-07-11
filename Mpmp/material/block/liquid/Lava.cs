@@ -9,7 +9,6 @@ namespace Mpmp.material.block.liquid
 {
     class LavaBlock : LiquidBlock
     {
-        public LavaBlock() : this(0) { }
-        public LavaBlock(int meta) : base(BlockIDs.LAVA, meta, "Lava") { }
+        public LavaBlock(int meta=0) : base(BlockIDs.LAVA, meta, "Lava") { }
     }
 }

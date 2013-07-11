@@ -9,8 +9,7 @@ namespace Mpmp.material.block.attachable
 {
     class LadderBlock : TransparentBlock
     {
-        public LadderBlock() : this(0) { }
-        public LadderBlock(int meta)
+        public LadderBlock(int meta=0)
             : base(BlockIDs.LADDER, meta, "Ladder")
         {
             this.isSolid = false;

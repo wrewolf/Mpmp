@@ -8,11 +8,7 @@ namespace Mpmp.material.block
 {
     class LiquidBlock : TransparentBlock
     {
-        public LiquidBlock(int id) : this(id, 0) { }
-
-        public LiquidBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public LiquidBlock(int id, int meta, string name)
+        public LiquidBlock(int id, int meta=0, string name = "Unknown")
             : base(id, meta, name)
         {
             this.isLiquid = true;

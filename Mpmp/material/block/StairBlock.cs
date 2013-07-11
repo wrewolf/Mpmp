@@ -8,11 +8,7 @@ namespace Mpmp.material.block
 {
     class StairBlock : TransparentBlock
     {
-        public StairBlock(int id) : this(id, 0) { }
-
-        public StairBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public StairBlock(int id, int meta, string name)
+        public StairBlock(int id, int meta=0, string name = "Unknown")
             : base(id, meta, name)
         {
             if ((this.meta & 0x04) == 0x04)

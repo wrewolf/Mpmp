@@ -11,9 +11,7 @@ namespace Mpmp.material.block.attachable
 {
     class SignPostBlock : TransparentBlock
     {
-        public SignPostBlock() : this(0) { }
-
-        public SignPostBlock(int meta) :
+        public SignPostBlock(int meta=0) :
             base(BlockIDs.SIGN_POST, meta, "Sign Post")
         {
             this.isSolid = false;

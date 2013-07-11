@@ -8,5 +8,9 @@ namespace Mpmp.utils
 {
     class Utils
     {
+        internal static object getRandomUpdateTicks()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

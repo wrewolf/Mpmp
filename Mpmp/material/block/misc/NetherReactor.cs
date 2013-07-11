@@ -9,8 +9,7 @@ namespace Mpmp.material.block.misc
 {
     class NetherReactorBlock : SolidBlock
     {
-        public NetherReactorBlock() : this(0) { }
-        public NetherReactorBlock(int meta)
+        public NetherReactorBlock(int meta=0)
             : base(BlockIDs.NETHER_REACTOR, meta, "Nether Reactor")
         {
             this.isActivable = true;

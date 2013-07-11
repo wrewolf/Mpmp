@@ -14,11 +14,9 @@ namespace Mpmp.math
 
         public double z { get; set; }
 
-        public Vector3() : this(0, 0, 0) { }
-
         public Vector3(Vector3 v) : this(v.x, v.y, v.z) { }
 
-        public Vector3(double x, double y, double z)
+        public Vector3(double x=0, double y=0, double z=0)
         {
             // TODO: Complete member initialization
             this.x = x;

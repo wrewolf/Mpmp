@@ -48,5 +48,20 @@ namespace Mpmp.world
         {
             throw new NotImplementedException();
         }
+
+        internal Block getBlock(Block v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void setBlock(material.block.ore.GlowingRedstoneOreBlock glowingRedstoneOreBlock, Block block, bool p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void scheduleBlockUpdate(Position position, object p1, int p2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

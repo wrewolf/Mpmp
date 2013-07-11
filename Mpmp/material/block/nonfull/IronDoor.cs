@@ -9,8 +9,7 @@ namespace Mpmp.material.block.nonfull
 {
     class IronDoorBlock : DoorBlock
     {
-        public IronDoorBlock() : this(0) { }
-        public IronDoorBlock(int meta) : base(BlockIDs.IRON_DOOR_BLOCK, meta, "Iron Door Block") { }
+        public IronDoorBlock(int meta=0) : base(BlockIDs.IRON_DOOR_BLOCK, meta, "Iron Door Block") { }
 
         public double getBreakTime(Item  item, Player  player){
 		if(( player.gamemode & 0x01) == 0x01){

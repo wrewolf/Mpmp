@@ -10,11 +10,7 @@ namespace Mpmp.material.block
 {
     class DoorBlock : TransparentBlock
     {
-        public DoorBlock(int id) : this(id, 0) { }
-
-        public DoorBlock(int id, int meta) : this(id, meta, "Unknown") { }
-
-        public DoorBlock(int id, int meta, string name)
+        public DoorBlock(int id, int meta = 0, string name = "Unknown")
             : base(id, meta, name)
         {
             this.isSolid = false;
